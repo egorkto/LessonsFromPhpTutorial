@@ -9,6 +9,36 @@
         <div class="row post-list">
             
         </div>
+
+        <div class="row col-12">
+            <h2>Добавление</h2>
+            <div>
+                <div class="form-group">
+                    <label for="title">Заголовок поста</label>
+                    <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="body">Содержимое</label>
+                    <textarea class="form-control" id="body"></textarea>
+                </div>
+                <button type="submit" onclick="addPost()" class="btn btn-primary">Добавить пост</button>
+            </div>
+        </div>
+
+        <div class="row col-12">
+            <h2>Редактирование</h2>
+            <div>
+                <div class="form-group">
+                    <label for="title-edit">Заголовок поста</label>
+                    <input type="text" class="form-control" id="title-edit" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="body-edit">Содержимое</label>
+                    <textarea class="form-control" id="body-edit"></textarea>
+                </div>
+                <button type="submit" onclick="updatePost()" class="btn btn-primary">Обновить пост</button>
+            </div>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
