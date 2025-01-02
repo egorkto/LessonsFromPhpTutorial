@@ -27,19 +27,14 @@ if (isset($_SESSION['user'])) {
         <input type="password" name="password" placeholder="Password:">
         <label for="">Confirm password</label>
         <input type="password" name="password_confirm" placeholder="Confirm password:">
-        <button type="submit">Submit</button>
+        <button type="submit" class="register-btn">Submit</button>
         <p>
             Havet account? - <a href="/">log in</a>
         </p>
-        <?php
-        if (isset($_SESSION['message'])) { ?>
-        <p class="msg">
-            <?php
-            echo $_SESSION['message'];
-            unset($_SESSION['message']);
-            ?>
-        </p>
-        <?php } ?>
+        <p class="msg none">Lorem ipsum dolor sit amet consectetur.</p>
     </form>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

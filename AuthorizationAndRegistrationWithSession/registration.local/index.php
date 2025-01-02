@@ -14,24 +14,19 @@ if (isset($_SESSION['user'])) {
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-    <form action="vendor/login.php" method="post">
+    <form>
         <label for="">Login</label>
         <input type="text" name="login" placeholder="Login:">
         <label for="">Password</label>
         <input type="password" name="password" placeholder="Password:">
-        <button type="submit">Enter</button>
+        <button type="submit" class="login-btn">Enter</button>
         <p>
             Haven't account? - <a href="/register.php">sign up</a>
         </p>
-        <?php
-        if (isset($_SESSION['message'])) { ?>
-        <p class="msg">
-            <?php
-            echo $_SESSION['message'];
-            unset($_SESSION['message']);
-            ?>
-        </p>
-        <?php } ?>
+        <p class="msg none">Lorem ipsum dolor sit amet.</p>
     </form>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
